@@ -43,3 +43,24 @@ the loop body, and then it goes back to the beginning
     }
 if i type a string that does exist in the collection, it'll print the string. if not, nothing 
 will happen.
+
+26. updated listMatching method
+    public boolean listMatching(String searchString)
+    {
+        boolean fileMatch = false;
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+                fileMatch = true;
+            }
+            else {
+                System.out.println("There is no file matching the input.");
+                fileMatch = false;
+            }
+        }
+        return fileMatch;
+    }
+note that if there are no items in the collection, the else statement will print nothing 
+there is nothing
+
+27. 

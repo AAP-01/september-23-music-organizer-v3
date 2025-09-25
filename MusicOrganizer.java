@@ -77,13 +77,20 @@ public class MusicOrganizer
     /**
      * Added by me.
      */
-    public void listMatching(String searchString)
+    public boolean listMatching(String searchString)
     {
+        boolean fileMatch = false;
         for(String filename : files) {
             if(filename.contains(searchString)){
                 System.out.println(filename);
+                fileMatch = true;
+            }
+            else {
+                System.out.println("There is no file matching the input.");
+                fileMatch = false;
             }
         }
+        return fileMatch;
     }
     
     /**
