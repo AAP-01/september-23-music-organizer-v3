@@ -63,6 +63,30 @@ public class MusicOrganizer
     }
     
     /**
+     * Added by me. This will print each file AND their index.
+     */
+    public void listWithIndex()
+    {
+        int position = 0;
+        for(String filename : files) {
+            System.out.println(position + ": " + filename);
+            position++;
+        }
+    }
+    
+    /**
+     * Added by me.
+     */
+    public void listMatching(String searchString)
+    {
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+            }
+        }
+    }
+    
+    /**
      * Remove a file from the collection.
      * @param index The index of the file to be removed.
      */

@@ -22,3 +22,24 @@ addFile(String filename)
 23. with the breakpoint set on the loop body of listAllFiles(), the 
 debugger shows that the method will print a file every time once it passes 
 the loop body, and then it goes back to the beginning
+24. listWithIndex method
+    public void listWithIndex()
+    {
+        int position = 0;
+        for(String filename : files) {
+            System.out.println(position + ": " + filename);
+            position++;
+        }
+    }
+
+25. listMatching method
+    public void listMatching(String searchString)
+    {
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+            }
+        }
+    }
+if i type a string that does exist in the collection, it'll print the string. if not, nothing 
+will happen.
