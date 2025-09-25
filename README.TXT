@@ -18,4 +18,7 @@ method prints a list of the collection.
 Lab 4#
 21. calling listAllFiles() does indeed print the 3 files i've inputted in 
 addFile(String filename)
-22. 
+22. x
+23. with the breakpoint set on the loop body of listAllFiles(), the 
+debugger shows that the method will print a file every time once it passes 
+the loop body, and then it goes back to the beginning
