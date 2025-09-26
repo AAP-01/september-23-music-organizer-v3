@@ -64,3 +64,5 @@ note that if there are no items in the collection, the else statement will print
 there is nothing
 
 27. 
+
+28. for(Track track : tracklist)
