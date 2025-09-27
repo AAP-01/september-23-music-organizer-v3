@@ -44,7 +44,7 @@ public class MusicPlayer
         finally {
             killPlayer();
         }
-    }
+    }    
     
     /**
      * Start playing the given audio file.

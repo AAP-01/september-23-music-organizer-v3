@@ -63,6 +63,26 @@ will happen.
 note that if there are no items in the collection, the else statement will print nothing 
 there is nothing
 
-27. 
+27. playSamplesByArtist method
+    public void addFile(String filename, String artistName)
+    {
+        files.add(filename +" by " + artistName);
+    }
+...
+    public boolean listMatching(String searchString)
+    {
+        boolean fileMatch = false;
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+                fileMatch = true;
+            }
+            else {
+                System.out.println("There is no file matching the input.");
+                fileMatch = false;
+            }
+        }
+        return fileMatch;
+    }
 
 28. for(Track track : tracklist)
